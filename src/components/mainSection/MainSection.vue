@@ -1,5 +1,5 @@
 <template>
-  <section class="hero" :style="{ backgroundImage: `url(${img})` }">
+  <section class="hero" :style="{ backgroundImage: `url(${img})` }" :id="anchor">
     <div class="wrapper">
         <div class="hero__offer">
             <h1 class="hero__title">
@@ -28,6 +28,10 @@ export default {
             type: String,
             required: true, 
         },
+        anchor: {
+            type: String,
+             default: '#home'
+        }
     }
 }
 </script>

@@ -1,25 +1,26 @@
 <template>
-  <div class="header">
-    <div class="wrapper">
-        <div class="header__offer">
-            <a href="/" class="header__logo">
-                <img :src="logo" alt="Success Craft" class="header__logo-img">
-            </a>
-            <NavMenu/>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__offer">
+                <a href="/" class="header__logo">
+                    <img :src="logo" alt="Success Craft" class="header__logo-img">
+                </a>
+                <NavMenu/>
+            </div>
         </div>
-    </div>
-  </div>
+    </header>
 </template>
 
 <script>
 import NavMenu from '../navMenu/NavMenu.vue';
-import logo from '@/assets/icons/logo.png';
+
 export default {
-    data() {
-        return {
-            logo
+    props: {
+        logo: {
+            type: String,
+            required: true
         }
-    },
+    }, 
     components: {
         NavMenu
     }
