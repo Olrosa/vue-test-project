@@ -1,0 +1,22 @@
+@use './fonts.scss';
+@use './titles.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, input, input::placeholder, button, a {
+    font-family: "Gothic A1";
+    color: #3D3D3D;
+}
+
+body {
+    background-color: #F5F7FA;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
