@@ -1,9 +1,18 @@
 <template>
+
   <HeaderComponent/>
+  <MainSection
+    title="Welcome to Test Page"
+    subtitle="Front-end developer"
+    :img="heroBg"/>
+
 </template>
 
 <script>
-import HeaderComponent from './components/headerComponent/HeaderComponent.vue';
+import HeaderComponent from './components/headerComponent/HeaderComponent.vue'
+import MainSection from './components/mainSection/MainSection.vue'
+
+import heroBg from './assets/img/hero_bg.png'
 
 export default {
   data() {
@@ -15,10 +24,11 @@ export default {
           {title: 'Applications', archor: '#applications'},
           {title: 'Contact us', archor: '#contacts'}
       ],
+      heroBg
     }
   },
   components: {
-    HeaderComponent
+    HeaderComponent, MainSection
   },
   provide() {
     return {
