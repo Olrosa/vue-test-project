@@ -18,6 +18,10 @@
   <ApplicationsSection 
     anchor="applications"
     title="Applications"/>
+
+  <FooterApp>
+    ©2015-2022 Success Craft
+  </FooterApp>
 </template>
 
 <script>
@@ -27,6 +31,7 @@ import AboutSection from './components/aboutSection/AboutSection.vue'
 import FrameworksSection from './components/frameworksSection/FrameworksSection.vue'
 import ActionCardsSection from './components/actionCardsSection/ActionCardsSection.vue'
 import ApplicationsSection from './components/applicationsSection/ApplicationsSection.vue'
+import FooterApp from './components/footerApp/FooterApp.vue'
 
 import logo from './assets/icons/logo.png'
 import heroBg from './assets/img/hero_bg.png'
@@ -48,7 +53,7 @@ export default {
     }
   },
   components: {
-    HeaderComponent, MainSection, AboutSection, FrameworksSection, ActionCardsSection, ApplicationsSection
+    HeaderComponent, MainSection, AboutSection, FrameworksSection, ActionCardsSection, ApplicationsSection, FooterApp
   },
   provide() {
     return {
