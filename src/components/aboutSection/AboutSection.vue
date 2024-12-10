@@ -71,6 +71,7 @@ export default {
         &__frame {
             flex: 4;
             height: 300px;
+            border: none;
         }
         &__descr {
             color: #808080;

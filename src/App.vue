@@ -5,21 +5,22 @@
     title="Welcome to Test Page"
     subtitle="Front-end developer"
     :img="heroBg"
-    anchor="#home"/>
+    anchor="home"/>
   <AboutSection 
     title="About us" 
     frame="https://www.youtube.com/embed/Upex8hM6wRs?si=CUFFvrRf0bvzd2rg" 
-    anchor="#about" 
+    anchor="about" 
     :bg-img="aboutBg">
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.
   </AboutSection>
-
+  <FrameworksSection anchor="frameworks"/>
 </template>
 
 <script>
 import HeaderComponent from './components/headerComponent/HeaderComponent.vue'
 import MainSection from './components/mainSection/MainSection.vue'
 import AboutSection from './components/aboutSection/AboutSection.vue'
+import FrameworksSection from './components/frameworksSection/FrameworksSection.vue'
 
 import logo from './assets/icons/logo.png'
 import heroBg from './assets/img/hero_bg.png'
@@ -41,7 +42,7 @@ export default {
     }
   },
   components: {
-    HeaderComponent, MainSection, AboutSection
+    HeaderComponent, MainSection, AboutSection, FrameworksSection
   },
   provide() {
     return {
