@@ -15,6 +15,9 @@
   </AboutSection>
   <FrameworksSection anchor="frameworks"/>
   <ActionCardsSection/>
+  <ApplicationsSection 
+    anchor="applications"
+    title="Applications"/>
 </template>
 
 <script>
@@ -23,6 +26,7 @@ import MainSection from './components/mainSection/MainSection.vue'
 import AboutSection from './components/aboutSection/AboutSection.vue'
 import FrameworksSection from './components/frameworksSection/FrameworksSection.vue'
 import ActionCardsSection from './components/actionCardsSection/ActionCardsSection.vue'
+import ApplicationsSection from './components/applicationsSection/ApplicationsSection.vue'
 
 import logo from './assets/icons/logo.png'
 import heroBg from './assets/img/hero_bg.png'
@@ -44,7 +48,7 @@ export default {
     }
   },
   components: {
-    HeaderComponent, MainSection, AboutSection, FrameworksSection, ActionCardsSection
+    HeaderComponent, MainSection, AboutSection, FrameworksSection, ActionCardsSection, ApplicationsSection
   },
   provide() {
     return {

@@ -44,7 +44,7 @@ export default {
 
 <style scoped lang="scss">
     .cards {
-        padding: 30px 0 20px 0;
+        margin-top: 20px;
         background: #FFF;
         &__offer {
             display: flex;
