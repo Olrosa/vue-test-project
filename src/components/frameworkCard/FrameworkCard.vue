@@ -68,7 +68,7 @@ export default {
         }
         &__img {
             flex: 4;
-            height: 100%;
+            height: 350px;
             object-fit: cover;
             object-position: center;
             order: 1;

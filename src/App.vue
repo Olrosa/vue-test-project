@@ -14,6 +14,7 @@
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset.
   </AboutSection>
   <FrameworksSection anchor="frameworks"/>
+  <ActionCardsSection/>
 </template>
 
 <script>
@@ -21,6 +22,7 @@ import HeaderComponent from './components/headerComponent/HeaderComponent.vue'
 import MainSection from './components/mainSection/MainSection.vue'
 import AboutSection from './components/aboutSection/AboutSection.vue'
 import FrameworksSection from './components/frameworksSection/FrameworksSection.vue'
+import ActionCardsSection from './components/actionCardsSection/ActionCardsSection.vue'
 
 import logo from './assets/icons/logo.png'
 import heroBg from './assets/img/hero_bg.png'
@@ -42,7 +44,7 @@ export default {
     }
   },
   components: {
-    HeaderComponent, MainSection, AboutSection, FrameworksSection
+    HeaderComponent, MainSection, AboutSection, FrameworksSection, ActionCardsSection
   },
   provide() {
     return {
