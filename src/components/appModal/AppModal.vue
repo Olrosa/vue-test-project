@@ -54,4 +54,9 @@ export default {
             font-weight: bold;
         }
     }
+    @media (max-width: 768px) {
+        .modal {
+            width: 90%;
+        }
+    }
 </style>

@@ -50,4 +50,31 @@ export default {
             }
         }
     }
+    @media (max-width: 768px) {
+        .header {
+            &__logo {
+                &-img {
+                    width: 140px;
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .header {
+            &__logo {
+                &-img {
+                    width: 80px;
+                }
+            }
+        }
+    }
+    @media (max-width: 390px) {
+        .header {
+            &__logo {
+                &-img {
+                    width: 50px;
+                }
+            }
+        }
+    }
 </style>

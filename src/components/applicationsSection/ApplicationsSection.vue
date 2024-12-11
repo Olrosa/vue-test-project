@@ -97,4 +97,11 @@ export default {
             justify-content: space-between;
         }
     }
+    @media (max-width: 992px) {
+        .applications {
+            &__offer {
+                gap: 20px;
+            }
+        }
+    }
 </style>

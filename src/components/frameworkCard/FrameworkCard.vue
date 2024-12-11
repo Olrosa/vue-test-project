@@ -97,4 +97,37 @@ export default {
             gap: 20px;
         }
     }
+    @media (max-width: 992px) {
+        .card  {
+            &__offer {
+                gap: 20px;
+            }
+            &__img {
+                flex: none;
+                width: 40%;
+            }
+            &__about {
+                flex: none;
+                width: 60%;
+                gap: 20px;
+            }
+            
+        }
+    }
+    @media (max-width: 576px) {
+        .card {
+            &__offer {
+                flex-direction: column;
+            }
+            &__img {
+                width: 100%;
+                height: 200px;
+                order: 1 !important;
+            }
+            &__about {
+                width: 100%;
+                order: 2 !important;
+            }
+        }
+    }
 </style>

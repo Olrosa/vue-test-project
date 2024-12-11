@@ -51,4 +51,11 @@ export default {
             gap: 20px;
         }
     }
+    @media (max-width: 992px) {
+        .cards {
+            &__offer {
+                flex-direction: column;
+            }
+        }
+    }
 </style>

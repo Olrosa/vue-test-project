@@ -36,4 +36,9 @@ export default {
             background: #3D3D3D;
         }
     }
+    @media (max-width: 992px) {
+        .card {
+            width: calc(50% - 20px);
+        }
+    }
 </style>

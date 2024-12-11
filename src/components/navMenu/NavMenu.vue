@@ -35,4 +35,24 @@ export default {
             }
         }
     }
+    @media (max-width: 768px) {
+        .nav {
+            &__list {
+                gap: 10px;
+                &-link {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .nav {
+            &__list {
+                gap: 5px;
+                &-link {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
 </style>

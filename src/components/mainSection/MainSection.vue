@@ -64,4 +64,24 @@ export default {
             font-size: 36px;
         }
     }
+    @media (max-width: 768px) {
+        .hero {
+            &__offer {
+                gap: 30px;
+            }
+            &__subtitle {
+                font-size: 24px;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .hero {
+            &__offer {
+                width: 100%;
+            }
+            &__subtitle {
+                font-size: 24px;
+            }
+        }
+    }
 </style>

@@ -117,4 +117,14 @@ export default {
             }
         }
     }
+    @media (max-width: 768px) {
+        .form-field {
+            width: calc(33% - 10px);
+        }
+    }
+    @media (max-width: 576px) {
+        .form-field {
+            width: 100%;
+        }
+    }
 </style>

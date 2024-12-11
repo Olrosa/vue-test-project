@@ -84,4 +84,16 @@ export default {
             gap: 20px;
         }
     }
+    @media (max-width: 768px) {
+        .about {
+            &__offer {
+                flex-direction: column;
+                gap: 60px;
+            }
+            &__frame {
+                height: 350px;
+                flex: none;
+            }
+        }
+    }
 </style>

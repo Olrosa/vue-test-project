@@ -42,22 +42,32 @@ export default {
         gap: 20px;
         flex: 1;
         &__img {
-            flex: 6;
+            width: 60%;
             height: 220px;
             object-fit: cover;
             object-position: center;
         }
         &__offer {
+            width: 40%;
             padding: 25px 0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             gap: 10;
-            flex: 4;
         }
         &__descr {
             color: #808080;
             line-height: 26px;
+        }
+    }
+    @media (max-width: 992px) {
+        .card {
+            &__img {
+                width: 40%;
+            }
+            &__offer {
+                width: 60%;
+            }
         }
     }
 </style>
