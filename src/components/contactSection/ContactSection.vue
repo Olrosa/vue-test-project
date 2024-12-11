@@ -1,5 +1,5 @@
 <template>
-  <section class="contacts">
+  <section class="contacts" :id="anchor">
     <div class="wrapper">
         <h2 class="contacts__title">
             {{ title  }}
@@ -14,7 +14,8 @@ import AppForm from '../appForm/AppForm.vue';
 
 export default {
     props: {
-        title: String
+        title: String,
+        anchor: String
     },
     data() {
         return {
@@ -22,50 +23,66 @@ export default {
                 {
                     label: 'First Name *',
                     placeholder: 'Enter your First name',
-                    type: 'name',
-                    id: 1
+                    inputType: 'name',
+                    name: 'firstName',
+                    required: true,
+                    id: 'firstName'
                 },
                 {
                     label: 'Last Name *',
                     placeholder: 'Enter your Last name',
-                    type: 'name',
-                    id: 2
+                    inputType: 'name',
+                    name: 'firstName',
+                    required: true,
+                    id: 'lastName'
                 },
                 {
                     label: 'Company *',
                     placeholder: 'Company *',
-                    type: 'short-text',
-                    id: 3
+                    inputType: 'short-text',
+                    name: 'company',
+                    required: true,
+                    id: 'company'
                 },
                 {
                     label: 'Email *',
                     placeholder: 'Enter Your Email',
-                    type: 'email',
-                    id: 4
+                    inputType: 'email',
+                    name: 'email',
+                    required: true,
+                    id: 'email'
                 },
                 {
                     label: 'Job Title *',
                     placeholder: 'Enter job title',
-                    type: 'short-text',
-                    id: 5
+                    inputType: 'short-text',
+                    name: 'name',
+                    required: true,
+                    id: 'job'
                 },
                 {
                     label: 'Country',
                     placeholder: 'Enter Your Country',
-                    type: 'short-text',
-                    id: 6
+                    inputType: 'short-text',
+                    name: 'country',
+                    required: false,
+                    id: 'country'
                 },
                 {
                     label: 'State *',
                     placeholder: 'Enter your State',
-                    type: 'short-text',
-                    id: 7
+                    inputType: 'short-text',
+                    name: 'state',
+                    required: true,
+                    id: 'state'
                 },
                 {
                     label: 'Zip code *',
                     placeholder: 'Enter Your Zip Code',
-                    type: 'short-text',
-                    id: 8
+                    inputType: 'short-text',
+                    name: 'zipCode',
+                    required: true,
+                    id: 'zipCode'
                 }
             ]
         }

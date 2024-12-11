@@ -1,28 +1,58 @@
 <template>
-  <form class="form" @submit="handleSubmit">
+  <form class="form" @submit.prevent="handleSubmit" novalidate>
     <div class="form__offer">
         <FormField 
             v-for="item in fields" 
             :key="item.id" 
-            v-bind="item"/>
+            v-bind="item"
+            ref="fields"/>
     </div>
     <AppButton
         type="button"
-        @action="handleSubmit"
         class="form__button">Submit</AppButton>
   </form>
+  <AppModal 
+    :isModalOpen="isModalOpen" 
+    @close="closeModal">
+    Data sent successfully!
+  </AppModal>
 </template>
 
 <script>
-import AppButton from '../ui/appButton/AppButton.vue';
+import AppButton from '../ui/appButton/AppButton.vue'
 
 export default {
     props: {
         fields: Array
     },
+    data() {
+        return {
+            isModalOpen: false
+        }
+    },
     methods: {
+        formIsValid() {
+            let isValid = true;
+            this.$refs.fields.forEach((field) => {
+                if (!field.validate()) {
+                    isValid = false;
+                }
+            });
+            return isValid;
+        },
         handleSubmit() {
-            console.log('send log')
+            if (this.formIsValid()) {
+                this.$refs.fields.forEach((field) => {
+                    field.input && console.log(`field ${field.label}: ${field.input}`)
+                    field.clearInput()
+                    this.isModalOpen = true
+                    document.body.style.overflow = 'hidden'
+                })
+            }
+        },
+        closeModal() {
+            this.isModalOpen = false
+            document.body.style.overflow = ''
         }
     },
     components: {
